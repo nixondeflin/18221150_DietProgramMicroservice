@@ -22,3 +22,35 @@ Sebelum menggunakan API Service, terlebih dahulu kita harus mempunyai hal-hal di
 ```
 pip install fastapi uvicorn
 ```
+3. Untuk menjalankan server, gunakan command :
+```
+uvicorn diet:app --reload
+```
+Opsi --reload mengaktifkan penggantian otomatis server saat ada perubahan pada kode.
+
+## API Endpoints
+
+### General
+* GET /: The root endpoint, which returns a welcome message.
+
+### Users and Diet Recommendations
+* GET /diet: Mendapatkan profil pengguna dan program rekomendasi diet mereka.
+* GET /diet/{user_id}: Mendapatkan program rekomendasi diet pengguna tertentu sesuai dengan user_id.
+* POST /diet: Menambahkan pengguna dan program rekomendasi diet baru.
+* PUT /diet/{user_id}: Meng-update program rekomendasi diet pengguna tertentu sesuai dengan user_id.
+* DELETE /diet/{user_id}: Menghapus pengguna dan program rekomendasi diet.
+Models
+
+The API uses a Pydantic model to define the structure of user profiles and recommended diet plans.
+
+User Model
+
+user_id: Unique identifier for the user.
+name: User's full name.
+weight_kg: User's weight in kilograms.
+height_cm: User's height in centimeters.
+age: User's age.
+gender: User's gender (male or female).
+activity_level: User's activity level (sedentary, moderate, high).
+goal: User's dietary goal (weight_loss, muscle_gain, maintenance).
+recommended_diet: Recommended diet plan including daily calorie intake, macronutrient distribution, and suggested food items for meals.

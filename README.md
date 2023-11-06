@@ -1,1 +1,1 @@
-# 18221150_DietProgramMicroservice
+# Diet Program Recommendation Service

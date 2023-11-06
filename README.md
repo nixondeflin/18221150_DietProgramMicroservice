@@ -12,5 +12,13 @@ Diet Program Service merupakan RESTful API yang dirancang untuk memberikan rekom
 
 Sebelum menggunakan API Service, terlebih dahulu kita harus mempunyai hal-hal di bawah ini
 * Python 3.6+
+* Uvicorn, untuk menjalankan API Server
 * FastAPI
-* Uvicorn (for running the API server)
+
+## Instalasi
+
+1. Clone repository ke local
+2. Install fastapi uvicorn dengan pip :
+```
+pip install fastapi uvicorn
+```

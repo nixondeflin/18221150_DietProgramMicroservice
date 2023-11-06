@@ -34,7 +34,7 @@ Opsi `--reload` mengaktifkan penggantian otomatis server saat ada perubahan pada
 
 ### General
 
-* `GET /:` The root endpoint, which returns a welcome message.
+* `GET /:` Root endpoint, akan me-return welcome message.
 
 ### Users and Diet Recommendations
 
